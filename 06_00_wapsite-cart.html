@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyMall - Mỗi ngày mua sắm, mỗi ngày vui</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global-mobile.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header id="header" data-spy="affix" data-offset-top="50" >
+            <div class="container-header">
+                
+                <div class="row">
+                    <div class="hamburger" >
+                        <a href="#" class="btn-cat" data-toggle="modal" data-target="#main-menu">
+                            <i class="icon-menu">&nbsp</i>
+                        </a>
+                    </div>
+                    <div id="ip-search" class="input-search">
+                        <i id="close-search" class="icon-close" aria-hidden="true">&nbsp</i>
+                        <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                        <i class="icon-serch">&nbsp</i>
+                    </div>
+                    <div class="title-page">
+                        <a class="logo" href="01_index.html"><img src="images/myMall_logo.png" alt="MyMall"/></a>
+                    </div>
+                    <div class="text-right">
+                        <p class="hotline">1900 636 088</p>
+                        <i class="icon-hotline">&nbsp</i>                        
+                        <button id="btn-search" class="btn-t btn-search-home" href="#"><i class="icon-serch">&nbsp</i></button>
+                        <div class="cart dropdown"><a href="javascript:void(0);" title="" type="button" data-toggle="dropdown" class="dropdown-toggle"><img src="images/icons/icon-cart.png" alt=""><span class="number">6</span></a>
+                        <div role="menu" aria-labelledby="menu1" class="dropdown-menu">
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <p class="show-hotline">1900 636 088</p>
+            </div>
+        </header>
+        <!--/begin BANNER-->
+        <section class=" container banner" role="banner">
+            <div class="input-search">
+                <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                <i class="icon-serch">&nbsp</i>
+            </div>
+        </section><!--/end BANNER-->
+
+        <!--/begin HOME MAIN CONTENT-->
+        <section class="main" role="main">
+            <div class="container">
+                <div class="main-cart">
+                    <h2 class="title-cart">Giỏ hàng của bạn <span>(Đang có <span class="price">04</span> sản phẩm trong giỏ hàng)</span></h2>
+                    <!-- show new error box in cart  -->
+                    <div class="show-error-box box-bg">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <p class="nomal">Sản phẩm: <span>Nồi Lẩu Điện Argo AHP-304</span> không đủ số lượng bạn chọn. Bạn vui lòng chọn lại số lượng mua.</p>
+                        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                     <!-- show error box in cart  -->
+                    <div class="show-error-box">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <p class="error">Giỏ hàng của bạn có sản phẩm không còn tại kho, vui lòng kiểm tra lại giỏ hàng</p>
+                        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                    <!-- in case nomal -->
+                    <div class="show-error-box">
+                        <i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+                        <p class="nomal"> <span>Giỏ hàng của bạn có sản phẩm không còn tại kho</span>, vui lòng kiểm tra lại giỏ hàng</p>
+                        <span class="close"><i class="fa fa-times" aria-hidden="true"></i></span>
+                    </div>
+                    <div class="wrap-content">
+                        <div class="gift-for-all">
+                            <label><i class="fa fa-gift" aria-hidden="true"></i><span>Quà tặng miễn phí đính kèm</span></label>
+                            <ul class="list-infor">
+                                <li class="col-sm-2 col-xs-2">
+                                    <div class="wrap-img">
+                                        <img src="images/cart/pro-1.png">
+                                    </div>
+                                </li>
+                                <li class="col-sm-7 col-xs-7">
+                                    <a href="#" class="descript">Kem Chống Nắng Spf30 - Không Tan Trong Nước -  50Ml Eveline EVEL 3077</a>
+                                    <p class="price-cart">299.000đ</p>
+                                </li>
+                                <li class="col-sm-3 col-xs-3 wrap-number">
+                                    <div class="number">
+                                        <div class="col-sm-6">1</div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="wrap-product">
+                            <div class="one">
+                                <ul class="list-infor">
+                                    <li class="col-sm-2 col-xs-2">
+                                        <div class="wrap-img">
+                                            <img src="images/cart/pro-1.png">
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-7 col-xs-7">
+                                        <a href="#" class="descript">Kem Chống Nắng Spf30 - Không Tan Trong Nước -  50Ml Eveline EVEL 3077</a>
+                                        <p class="price-cart">299.000đ</p>
+                                    </li>
+                                    <li class="col-sm-3 col-xs-3 wrap-number">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <div class="number">
+                                            <div class="col-sm-3 sub">-</div>
+                                            <div class="col-sm-6"><p>1</p></div>
+                                            <div class="col-sm-3 plus ">+</div>
+                                        </div>
+                                        <div class="tooltip bottom"><div class="tooltip-inner"><i class="fa fa-exclamation-triangle"></i>Còn <b class="73618">5</b> sản phẩm.</div></div>
+                                    </li>
+                                </ul>
+                                <div class="gift-for-one">
+                                    <div class="col-sm-2 col-xs-2">
+                                      <div class="wrap-img-gift">
+                                        <img src="images/cart/gift.png" alt="">
+                                      </div>
+                                      <i class="fa fa-gift" aria-hidden="true"></i>
+                                    </div>
+                                    <div class="col-sm-8 col-xs-8">
+                                        <p class="detail id-text">Tặng Mặt Nạ Dưỡng Ẩm Trắng Da 2 Bước Purederm – 26g</p>
+                                        <p class="price-gift">35.000đ</p>
+                                    </div>
+                                    <div class="col-sm-2 col-xs-2 number">
+                                      <p class="number-gift">1</p>
+                                    </div>  
+                                </div>
+                            </div>
+                            <div class="one">
+                                <ul class="list-infor">
+                                    <li class="col-sm-2 col-xs-2">
+                                        <div class="wrap-img">
+                                            <img src="images/cart/pro-2.png">
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-7 col-xs-7">
+                                        <a href="#" class="descript">Tủ gỗ tự nhiên tiện ích 2 ngăn kéo Smart Flex 60 x 40 cm (Trắng) - ILMGH</a>
+                                        <p class="price-cart">1.390.000đ</p>
+                                    </li>
+                                    <li class="col-sm-3 col-xs-3 wrap-number">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <div class="number">
+                                            <div class="col-sm-3 col-xs-3 sub">-</div>
+                                            <div class="col-sm-6 col-xs-6"><p>1</p></div>
+                                            <div class="col-sm-3 col-xs-3 plus ">+</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="one">
+                                <ul class="list-infor">
+                                    <li class="col-sm-2 col-xs-2">
+                                        <div class="wrap-img">
+                                            <img src="images/cart/pro-3.png">
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-7 col-xs-7">
+                                        <a href="#" class="descript">Bộ Nồi cao cấp thương hiệu Oxy Hóa Cứng Ever Supor TW07007</a>
+                                        <p class="price-cart">1.390.000đ</p>
+                                        <div class="more-infor">
+                                            <p class="out-of-cart">Sản phẩm đang hết hàng</p>
+                                            <button type="button" class="note" data-toggle="modal" data-target="#myModal3">Thông báo khi có hàng</button>
+                                        </div>
+                                    </li>
+                                    <li class="col-sm-3 col-xs-3 wrap-number">
+                                        <i class="fa fa-trash" aria-hidden="true"></i>
+                                        <div class="number">
+                                            <div class="col-sm-3 col-xs-3 sub">-</div>
+                                            <div class="col-sm-6 col-xs-6"><p>1</p></div>
+                                            <div class="col-sm-3 col-xs-3 plus">+</div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                         <!-- popup thông báo khi có hàng =============-->
+                          <!-- Modal -->
+                          <div class="modal fade" id="myModal3" role="dialog">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                  <p class="title">Bạn vui lòng để lại địa chỉ Email, myMall sẽ thông báo khi sản phẩm có hàng.</p>
+                                  <div class="ip-email">
+                                    <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    <input type="text" placeholder="Nhập địa chỉ email của bạn"></input>
+                                  </div>
+                                  <button type="button" class="send"> Gửi</button>
+                              </div>
+                            </div>
+                          </div>
+                          <!-- popup send success================== -->
+                          <!-- <div class="modal fade" id="myModal3" role="dialog">
+                            <div class="modal-dialog">
+                              <div class="modal-content">
+                                  <button type="button" class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                                  <i class="fa fa-paper-plane-o " aria-hidden="true"></i>
+                                  <p class="title">Sản phẩm đã được thêm vào danh sách thông báo khi có hàng.</p>
+                                  
+                                  <button type="button" class="send">Tiếp tục</button>
+                              </div>
+                            </div>
+                          </div> -->
+                          <!-- end -->
+                          <div class="wrap-free">
+                              <p>Tổng cộng: <span class="price">1.689.000đ</span></p> 
+                              <p>Phí vận chuyển: <span>Chưa có</span></p> 
+                          </div>
+                          <div class="wrap-save">
+                              <i class="icon-myxu">&nbsp</i> <span>Mua đơn hàng này bạn sẽ tích lũy</span>
+                              <p class="save">+ <b class="save-money">9010</b> <span >myXu</span></p>
+                          </div>
+                          <div class="gift_myxu">
+                              <i class="fa fa-gift" aria-hidden="true"></i>
+                              <span>Bạn sẽ được tặng thêm <b>13.000</b> myXu khi đơn hàng này giao thành công.</span>
+                          </div>
+                          <button type="button" class="payment" value="submit"> Tiến hành thanh toán</button>
+                          <button type="button" class="continue" value="submit"> Tiếp tục mua hàng</button>
+                    </div>
+                </div>
+               
+            </div>
+        </section><!--/end HOME MAIN CONTENT-->
+
+        <footer>
+			<ul class="container wrap-footer">
+				<li class="col-sm-4">
+                  <i class="icon-support">&nbsp</i>   
+                  <p>Hỗ trợ khách hàng</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-ask">&nbsp</i>   
+                  <p>Bạn thắc mắc ?</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-mm">&nbsp</i>   
+                  <p>myMall.vn</p>           
+                </li>
+			</ul>
+            <a href="#" class="scrollup" title=""><span class="fa fa-angle-up"></span></a>
+			<div class="container">
+				<div class="company">
+					<p>&copy; 2014-2016 - Công ty TNHH Thương Mại Điện Tử Modern Life.<br/>
+					<strong>Văn phòng:</strong> Phòng 802, CT Plaza, 60A Trường Sơn, P. 2, Q. Tân Bình, TPHCM <br/>
+                    GP số: <strong>312952685</strong> do Sở kế hoạch & Đầu tư Tp Hồ Chí Minh cấp ngày 02/10/2014</p>
+				</div>
+                <div class="device-changing">
+                    <a href="#" title="">Xem phiên bản đầy đủ Desktop <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+			</div>
+        </footer>
+		
+        <!-- begin MAIN MENU -->
+      <div class="modal " id="main-menu">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <button type="button" id="btn-close" class="close" data-dismiss="modal"><i class="icon-close">&nbsp</i></button>
+               <ul class="main-menu">
+                    <li class="Selected"><a href="#"><i class="icon-login">&nbsp</i> Đăng nhập / Đăng ký</a></li>
+                    <li>
+                        <a href="#"><i class="icon icon-tasua">&nbsp</i> Tã & sữa <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" ><i class="icon icon-t">&nbsp</i> Phụ kiện điển tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-me-va-pe">&nbsp</i> Mẹ & bé<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thiet-bi-gd">&nbsp</i> Thiết bị gia đình<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-the-thao">&nbsp</i> Thể thao dã ngoại<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon icon-dien-tu">&nbsp</i> Điện tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thoi-trang">&nbsp</i> Thời trang và phụ kiện<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-sach">&nbsp</i> Sách - Văn phòng phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thuc-pham">&nbsp</i> Thực phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-suc-khoe">&nbsp</i> Sức khỏe<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-my-pham">&nbsp</i> Mỹ phẩm - Làm đẹp<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+               </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div><!-- /end WRAPPER -->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <!-- <script src="js/drag-on.js"></script> -->
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>

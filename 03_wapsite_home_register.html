@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyMall - Mỗi ngày mua sắm, mỗi ngày vui</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global-mobile.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header id="header" data-spy="affix" data-offset-top="50" >
+            <div class="container-header">
+                
+                <div class="row">
+                    <div class="hamburger" >
+                        <a href="#" class="btn-cat" data-toggle="modal" data-target="#main-menu">
+                            <i class="icon-menu">&nbsp</i>
+                        </a>
+                    </div>
+                    <div id="ip-search" class="input-search">
+                        <i id="close-search" class="icon-close" aria-hidden="true">&nbsp</i>
+                        <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                        <i class="icon-serch">&nbsp</i>
+                    </div>
+                    <div class="title-page">
+                        <a class="logo" href="01_index.html"><img src="images/myMall_logo.png" alt="MyMall"/></a>
+                    </div>
+                    <div class="text-right">
+                        <p class="hotline">1900 636 088</p>
+                        <button id="btn-search" class="btn-t btn-search-home" href="#"><i class="icon-serch">&nbsp</i></button>
+                        <div class="cart dropdown"><a href="javascript:void(0);" title="" type="button" data-toggle="dropdown" class="dropdown-toggle"><img src="images/icons/icon-cart.png" alt=""><span class="number">6</span></a>
+                        <div role="menu" aria-labelledby="menu1" class="dropdown-menu">
+                          <div class="form-box form-box-cart">
+                            <div class="form-head clearfix">
+                              <h4 class="pull-left">Bạn có (0) trong giỏ hàng</h4><a href="javascript:void(0);" title="" class="btn btn-orange pull-right">Đặt hàng</a>
+                            </div>
+                            <div class="form-body">
+                              <p class="orange">Bạn có muốn mua?</p>
+                              <ul class="list-square">
+                                <li><a href="javascript:void(0);" title="">Sản phẩm khuyến mại Hot nhất</a></li>
+                                <li><a href="javascript:void(0);" title="">Top 50 sản phẩm tốt nhất</a></li>
+                                <li><a href="javascript:void(0);" title="">Xu hướng mới nhất</a></li>
+                                <li><a href="javascript:void(0);" title="">Chỉ có tại myMall</a></li>
+                                <li><a href="javascript:void(0);" title="">Hàng cao cấp chính hãng</a></li>
+                              </ul>
+                            </div>
+                            <div class="form-footer clearfix">
+                              <p class="pull-left">Tạm tính </p>
+                              <p class="total-price pull-right">0 đ</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--/begin HOME MAIN CONTENT-->
+        <section class="main" role="main">
+            <div class="container">
+                <form class="register-form">
+                    <div class="group">
+                        <h2 class="title">thông tin đăng ký tài khoản mymall</h2>
+                    </div>
+                    <div class="form-group">
+                        <label>Họ tên</label>
+                        <div class="row">
+                            <div class="col-md-2 col-sm-2 col-xs-2">
+                                <select class="form-control gender">
+                                  <option>Anh</option>
+                                  <option>Chị</option>
+                                </select>
+                            </div>
+                            <div class="col-md-10 col-sm-10 col-xs-10">
+                                <input class="name" type="text" >
+                                <span class="error">Bạn phải nhập họ tên</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>Email</label>
+                        <input type="email" >
+                    </div>
+                    <div class="form-group">
+                        <label>Mật khẩu</label>
+                        <input type="password" >
+                    </div>
+                    <div class="form-group">
+                        <label>Nhập lại mật khẩu</label>
+                        <input type="password" >
+                    </div>
+                    <div class="row">
+                        <div class="check">
+                            <input type="checkbox"> 
+                            <div class="text">
+                                <span class="error">Bạn phải check trước</span>
+                                <span>Tôi đã đọc và đồng ý với</span>
+                            </div>
+                        </div>
+                        <a class="link" href="#" title="">Điều khoản sử dụng của myMall</a>
+                    </div>
+                    <button type="submit" class="btn-submit" value="login"> Đăng ký</button>
+                    <div class="row"><p>Đã có tài khoản?</p> <a class="link" href="#" title="">Đăng nhập</a></div>
+                    
+                </form>
+            </div>
+        </section><!--/end HOME MAIN CONTENT-->
+
+        <footer>
+			<ul class="container wrap-footer">
+				<li class="col-sm-4">
+                  <i class="icon-support">&nbsp</i>   
+                  <p>Hỗ trợ khách hàng</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-ask">&nbsp</i>   
+                  <p>Bạn thắc mắc ?</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-mm">&nbsp</i>   
+                  <p>myMall.vn</p>           
+                </li>
+			</ul>
+            <a href="#" class="scrollup" title=""><span class="fa fa-angle-up"></span></a>
+			<div class="container">
+				<div class="company">
+					<p>&copy; 2014-2016 - Công ty TNHH Thương Mại Điện Tử Modern Life.<br/>
+					<strong>Văn phòng:</strong> Phòng 802, CT Plaza, 60A Trường Sơn, P. 2, Q. Tân Bình, TPHCM <br/>
+                    GP số: <strong>312952685</strong> do Sở kế hoạch & Đầu tư Tp Hồ Chí Minh cấp ngày 02/10/2014</p>
+				</div>
+                <div class="device-changing">
+                    <a href="#" title="">Xem phiên bản đầy đủ Desktop <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+			</div>
+        </footer>
+		
+        <!-- begin MAIN MENU -->
+      <div class="modal " id="main-menu">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <button type="button" id="btn-close" class="close" data-dismiss="modal"><i class="icon-close">&nbsp</i></button>
+               <ul class="main-menu">
+                    <li class="Selected"><a href="#"><i class="icon-login">&nbsp</i> Đăng nhập / Đăng ký</a></li>
+                    <li>
+                        <a href="#"><i class="icon icon-tasua">&nbsp</i> Tã & sữa <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" ><i class="icon icon-t">&nbsp</i> Phụ kiện điển tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-me-va-pe">&nbsp</i> Mẹ & bé<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thiet-bi-gd">&nbsp</i> Thiết bị gia đình<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-the-thao">&nbsp</i> Thể thao dã ngoại<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon icon-dien-tu">&nbsp</i> Điện tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thoi-trang">&nbsp</i> Thời trang và phụ kiện<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-sach">&nbsp</i> Sách - Văn phòng phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thuc-pham">&nbsp</i> Thực phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-suc-khoe">&nbsp</i> Sức khỏe<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-my-pham">&nbsp</i> Mỹ phẩm - Làm đẹp<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+               </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div><!-- /end WRAPPER -->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/drag-on.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

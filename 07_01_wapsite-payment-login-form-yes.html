@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>MyMall - Mỗi ngày mua sắm, mỗi ngày vui</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link href="css/global-mobile.css" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+
+        <header id="header" data-spy="affix" data-offset-top="50" >
+            <div class="container-header">
+                
+                <div class="row">
+                    <div class="hamburger" >
+                        <a href="#" class="btn-cat" data-toggle="modal" data-target="#main-menu">
+                            <i class="icon-menu">&nbsp</i>
+                        </a>
+                    </div>
+                    <div id="ip-search" class="input-search">
+                        <i id="close-search" class="icon-close" aria-hidden="true">&nbsp</i>
+                        <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                        <i class="icon-serch">&nbsp</i>
+                    </div>
+                    <div class="title-page">
+                        <a class="logo" href="01_index.html"><img src="images/myMall_logo.png" alt="MyMall"/></a>
+                    </div>
+                    <div class="text-right">
+                        <p class="hotline">1900 636 088</p>
+                        <i class="icon-hotline">&nbsp</i>                        
+                        <button id="btn-search" class="btn-t btn-search-home" href="#"><i class="icon-serch">&nbsp</i></button>
+                        <div class="cart dropdown"><a href="javascript:void(0);" title="" type="button" data-toggle="dropdown" class="dropdown-toggle"><img src="images/icons/icon-cart.png" alt=""><span class="number">6</span></a>
+                        <div role="menu" aria-labelledby="menu1" class="dropdown-menu">
+                          
+                        </div>
+                      </div>
+                    </div>
+                </div>
+                <p class="show-hotline">1900 636 088</p>
+            </div>
+        </header>
+        <!--/begin BANNER-->
+        <section class=" container banner" role="banner">
+            <div class="input-search">
+                <input class="search" type="text" placeholder="Tìm kiếm sản phẩm yêu thích">
+                <i class="icon-serch">&nbsp</i>
+            </div>
+        </section><!--/end BANNER-->
+
+        <!--/begin HOME MAIN CONTENT-->
+        <section class="main" role="main">
+            <div class="container">
+                <div class="wrap-payment">
+                    <h2 class="title-payment">Thanh toán đơn hàng </h2>
+                   
+                    <div class="wrap-content">
+                       <div class="address-form">
+                            <p class="title-part"><i class="icon-address">&nbsp</i> <span>Địa chỉ nhận hàng</span></p>
+                            <div class="wrap-form-yes">
+                              <div class="item-address ">
+                                <input type="radio" name="defaut" value="giao hang tieu chuan" checked="">
+                                <div class="edit-address" id="edit"><i class="fa fa-pencil-square-o" aria-hidden="true"></i><span> Sửa địa chỉ</span></div>
+                                <label>
+                                  Phạm Phương Du
+                                </label>
+                                <p class="ad">Số 120, Lê Đức Thọ, Phường 17, Quận Gò Vấp, Thành Phố Hồ Chí Minh</p>
+                                <p class="ad">Đt: 0123.456.789</p>
+                                <!-- form edit address -->
+                                  <form id="edit-form">
+                                    <div class="form-group ">
+                                      <p class="error">*Bạn chưa nhập tên</p>
+                                      <label>Họ tên người nhận hàng</label>
+                                      <div class="row">
+                                        <select class="form-control gender">
+                                          <option>Nam</option>
+                                          <option>Nữ</option>
+                                        </select>
+                                        <input class="name" type="text" placeholder="VD: Nguyễn Văn A">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row col-sm-12">
+                                      <div class="input-phone col-sm-6">
+                                        <p class="error">*Số điện thoại sai định dạng</p>
+                                        <label>Điện thoại</label>
+                                        <input type="text" placeholder="Vd: 0123.456.7899">
+                                      </div>
+                                      <div class="input-email col-sm-6">
+                                        <p class="error">*Bạn chưa nhập địa chỉ email</p>
+                                        <label>Email <span>(để gửi thông tin đơn hàng)</span></label>
+                                        <input type="email" placeholder="Vd: nguyenvanan@gmail.com">
+                                      </div>
+                                    </div>
+                                    <div class="form-group row city">
+                                    <p class="error">*Bạn chưa chọn Tỉnh/Thành Phố</p>
+                                      <label>Địa chỉ</label>
+                                      <select class="form-control">
+                                        <option>Chọn Tỉnh/Thành Phố</option>
+                                        <option>Thành phố Hồ Chí Minh</option>
+                                        <option>Đà Nẵng</option>
+                                        <option>Nghệ An</option>
+                                        <option>Quảng Nam</option>
+                                        <option>Bình Dương</option>
+                                        <option>Thanh Hóa</option>
+                                        <option>Cần Thơ</option>
+                                      </select>
+                                    </div>
+                                    <div class="form-group row">
+                                      <div class="district">
+                                        <p class="error">*Bạn chưa chọn Quận/Huyện</p>
+                                        <select class="form-control">
+                                          <option>Chọn Quận/Huyện</option>
+                                          <option>Quỳnh Lưu</option>
+                                          <option>Hoàng Mai</option>
+                                          <option>Nghệ An</option>
+                                          <option>Quảng Nam</option>
+                                          <option>Bình Dương</option>
+                                          <option>Thanh Hóa</option>
+                                          <option>Cần Thơ</option>
+                                        </select>
+                                      </div>
+                                      <div class="village">
+                                        <p class="error">*Bạn chưa chọn Phường</p>
+                                        <select class="form-control">
+                                          <option>Chọn Phường/Xã</option>
+                                          <option>Quỳnh Lộc</option>
+                                          <option>Tân Bình</option>
+                                          <option>Nghệ An</option>
+                                          <option>Quảng Nam</option>
+                                          <option>Bình Dương</option>
+                                          <option>Thanh Hóa</option>
+                                          <option>Cần Thơ</option>
+                                        </select>
+                                      </div>
+                                    </div>
+                                    <div class="form-group row choose-street">
+                                      <p class="error">*Bạn chưa chọn đường</p>
+                                      <input type="text" class="street" placeholder="Đường/ Phố, số nhà, ngõ ngách, hẻm...">
+                                    </div>
+                                    <button class="continue" type="button" value="continue">Cập nhật</button><span class="cancel-continue"><a href="#" id="cancel">Hủy bỏ</a></span>
+                                  </form>
+                                <!-- end -->
+                              </div>
+                              
+                              <a class="other-address" id="click-add" title=""><i class="fa fa-plus" aria-hidden="true"></i> <span>Chọn địa chỉ giao hàng khác</span></a>
+                              <!-- form add address -->
+                              <div class="wrap-form-no">
+                                <div class="row">
+                                  <i class="icon-person">&nbsp</i> 
+                                  <p class="error">*Bạn chưa nhập họ tên</p>
+                                  <input class="input-wap" type="text" placeholder="Họ tên người nhận hàng">
+                                </div>
+                                <div class="row">
+                                  <i class="icon-phone">&nbsp</i> 
+                                  <p class="error">*Bạn chưa nhập số điện thoại</p>
+                                  <input class="input-wap" type="text" placeholder="Điện thoại">
+                                </div>
+                                <div class="row">
+                                  <i class="icon-email">&nbsp</i>
+                                  <p class="error">*Bạn chưa nhập email</p> 
+                                  <input class="input-wap" type="email" placeholder="Email">
+                                </div>
+                                <div class="row ">
+                                  <div class="col-sm-1 col-xs-1">
+                                    <i class="icon-adress-hover">&nbsp</i> 
+                                  </div>
+                                  <div class="col-sm-5 col-xs-5">
+                                    <select class="form-control">
+                                      <option>TP Ho Chi Minh</option>
+                                      <option>Nghe An</option>
+                                      <option>Binh Duong</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-6 col-xs-6">
+                                    <select class="form-control">
+                                      <option>Quan 1</option>
+                                      <option>Quan 2</option>
+                                      <option>Quan 3</option>
+                                    </select>
+                                  </div>
+                                </div>
+                                <div class="row street">
+                                  <div class="col-sm-1 col-xs-1"></div>
+                                  <div class="col-sm-5 col-xs-5">
+                                    <select class="form-control">
+                                      <option>Phuong 1</option>
+                                      <option>Phuong 2</option>
+                                      <option>Xa Hoa An</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-sm-6 col-xs-6">
+                                    <input class="input-wap" type="text" placeholder="Đường, phố, số nhà, Ngõ/ hẻm/ ngách,...">
+                                    <label class="error">*Bạn chưa nhập đường</label>
+                                  </div>
+                                </div>
+                                <button class="continue" type="button" value="continue">Tiếp tục</button><span class="cancel-continue"><a href="#" id="cancel1">Hủy bỏ</a></span>
+                              </div>
+                              <!-- end form -->
+                            </div>
+                       </div>     
+                        
+                        <div class="transpot-form">
+                            <p class="title-part"><i class="icon-payment">&nbsp</i> <span>Phương thức giao hàng</span></p>
+                            <form>
+                                <div class="first">
+                                  <input type="radio" name="defaut" value="giao hang tieu chuan" checked > 
+                                  <label>
+                                    Giao hàng tiêu chuẩn
+                                  </label>
+                                  <p>Dự kiến giao đơn hàng này vào ngày <span class="date">11/10/2016</span> hoặc <span class="date">12/10/2016</span></p>
+                                </div>
+                                <div class="first">
+                                  <input type="radio" name="defaut" value="24h"> 
+                                  <label>Giao hàng 24h</label>
+                                  <p> Dự kiến giao hàng này vào ngày <span class="date">20/10/2016</span></p>
+                                </div>
+                            </form>
+                        </div>
+
+                        <div class="payment-form">
+                            <p class="title-part"><i class="fa fa-money" aria-hidden="true"></i> <span>Phương thức thanh toán</span></p>
+                            <div class="list-type-payment">
+                              <div class="type active">
+                                  <i class="ic ic-pmtype ic-pmtype1"></i>
+                                  <label>
+                                      Thanh toán bằng tiền mặt khi giao hàng
+                                  </label>
+                              </div>
+                              <div class="type">
+                                  <i class="ic ic-pmtype ic-pmtype2"></i>
+                                  <label>
+                                      Thanh toán bằng thẻ ATM có đăng ký Internet Banking
+                                  </label>
+                              </div>
+                              <div class="type">
+                                  <i class="ic ic-pmtype ic-pmtype3"></i>
+                                  <label>
+                                      Thanh toán bằng thẻ tín dụng Visa/Master card
+                                  </label>
+                              </div>
+                              <div class="type">
+                                  <i class="ic ic-pmtype ic-pmtype4"></i>
+                                  <label>
+                                      Thanh toán bằng Ví điện tử VTC Pay
+                                  </label>
+                              </div>
+                              <div class="type">
+                                  <i class="ic ic-pmtype ic-pmtype5"></i>
+                                  <label>
+                                      Thanh toán trả góp lãi suất 0% với thẻ tín dụng Sacombank
+                                  </label>
+                              </div>
+                              <div class="item">
+                                  <div class="col-md-12 checkbox-bottom">
+                                      <input type="checkbox" data-toggle="collapse" data-target="#VAT-info">
+                                      <span>Yêu cầu xuất hoá đơn giá trị gia tăng cho đơn hàng này</span>
+                                  </div>
+                              </div>
+                              <!-- when click checkbox show form -->
+                              <div class="collapse" id="VAT-info">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="well">
+                                            <span> Vui lòng điền đầy đủ thông tin công ty để nhận hoá đơn GTGT:</span>
+                                            <div class="frm-report">
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <label>Tên công ty</label>
+                                                    </div>
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <input type="text" placeholder="Ví dụ: Công ty TNHH Thương Mại Điện Tử Modern Life">
+                                                    </div>
+                                                </div>
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <label>Mã số thuế</label>
+                                                    </div>
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <input type="text" placeholder="Ví dụ: 398473094385">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-md-3 col-sm-3">
+                                                        <label>Địa chỉ công ty</label>
+                                                    </div>
+                                                    <div class="col-md-9 col-sm-9">
+                                                        <input type="text" placeholder="Ví dụ: 52 Trường Sơn, P.2, Q.Tân Bình, TP.HCM">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          <!-- end -->
+                          </div>
+                        </div>  
+
+                        <div class="information-form">
+                            <p class="title-part"><i class="icon-information">&nbsp</i> <span>Thông tin đơn hàng <span class="count">(2 sản phẩm)</span></span></p>
+                            <div class="wrap-content">
+                                <div class="gift-for-all">
+                                    <label><i class="fa fa-gift" aria-hidden="true"></i><span>Quà tặng miễn phí đính kèm</span></label>
+                                    <ul class="list-infor">
+                                        <li class="col-sm-2 col-xs-2">
+                                            <div class="wrap-img">
+                                                <img src="images/cart/pro-1.png">
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-8 col-xs-8">
+                                            <a href="#" class="descript">Kem Chống Nắng Spf30 - Không Tan Trong Nước -  50Ml Eveline EVEL 3077</a>
+                                            <b>Màu vàng - Size M</b>
+                                            <p class="price-cart">299.000đ</p>
+                                        </li>
+                                        <li class="col-sm-2 col-xs-2 wrap-number">
+                                            <div class="number">
+                                                <div class="col-sm-6 col-xs-6">1</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <div class="one">
+                                    <ul class="list-infor">
+                                        <li class="col-sm-2 col-xs-2">
+                                            <div class="wrap-img">
+                                                <img src="images/cart/pro-1.png">
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-7 col-xs-7">
+                                            <a href="#" class="descript">Kem Chống Nắng Spf30 - Không Tan Trong Nước -  50Ml Eveline EVEL 3077</a>
+                                            <p class="price-cart">299.000đ</p>
+                                        </li>
+                                        <li class="col-sm-3 col-xs-3 wrap-number">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <div class="number">
+                                                <div class="col-sm-3 col-xs-3 sub">-</div>
+                                                <div class="col-sm-6 col-xs-6"><p>1</p></div>
+                                                <div class="col-sm-3 col-xs-3 plus ">+</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="gift-for-one">
+                                        <i class="fa fa-gift" aria-hidden="true"></i>
+                                        <p class="detail id-text">Tặng Mặt Nạ Dưỡng Ẩm Trắng Da 2 Bước Purederm – 26g</p>
+                                    </div>
+                                </div>
+                                <div class="one">
+                                    <ul class="list-infor">
+                                        <li class="col-sm-2 col-xs-2">
+                                            <div class="wrap-img">
+                                                <img src="images/cart/pro-2.png">
+                                            </div>
+                                        </li>
+                                        <li class="col-sm-7 col-xs-7">
+                                            <a href="#" class="descript">Tủ gỗ tự nhiên tiện ích 2 ngăn kéo Smart Flex 60 x 40 cm (Trắng) - ILMGH</a>
+                                            <p class="price-cart">1.390.000đ</p>
+                                        </li>
+                                        <li class="col-sm-3 col-xs-3 wrap-number">
+                                            <i class="fa fa-trash" aria-hidden="true"></i>
+                                            <div class="number">
+                                                <div class="col-sm-3 col-xs-3 sub">-</div>
+                                                <div class="col-sm-6 col-xs-6"><p>1</p></div>
+                                                <div class="col-sm-3 col-xs-3 plus">+</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="wrap-button">
+                          <p class="save">Bạn đang có <b>xxx</b> myXu, đổi myXu để thanh toán.</p>
+                          <div class="row">
+                            <div class="col-sm-6 btn-apply change">
+                             <input type="text" placeholder="Nhập số myXu cần đổi">
+                             <button type="button" value="Ap dung"> Đổi myXu</button>
+                            </div>
+                            <div class="col-sm-6 btn-apply">
+                              <input type="text" placeholder="Nhập mã giảm giá">
+                              <button type="button" value="Ap dung"> Áp dụng</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="wrap-note">
+                            <div class="title-note"><i class="icon-note">&nbsp</i> <label>Ghi chú đơn hàng</label></div>
+                            <p>Giảm giá coupon: <span>-0đ</span></p> 
+                            <p>Giảm giá myXu: <span>-0đ</span></p> 
+                            <p>Phí vận chuyển: <span>Miễn phí</span></p>                          
+                        </div>
+
+                        <div class="total">
+                            <div class="total-number">Tổng cộng: <span class="price">598.000đ</span></div>
+                            <button type="button" value="order"> Đặt hàng</button>
+                        </div>
+                    </div>
+                </div>
+               
+            </div>
+        </section><!--/end HOME MAIN CONTENT-->
+
+        <footer>
+			<ul class="container wrap-footer">
+				<li class="col-sm-4">
+                  <i class="icon-support">&nbsp</i>   
+                  <p>Hỗ trợ khách hàng</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-ask">&nbsp</i>   
+                  <p>Bạn thắc mắc ?</p>           
+                </li>
+                <li class="col-sm-4">
+                  <i class="icon-mm">&nbsp</i>   
+                  <p>myMall.vn</p>           
+                </li>
+			</ul>
+            <a href="#" class="scrollup" title=""><span class="fa fa-angle-up"></span></a>
+			<div class="container">
+				<div class="company">
+					<p>&copy; 2014-2016 - Công ty TNHH Thương Mại Điện Tử Modern Life.<br/>
+					<strong>Văn phòng:</strong> Phòng 802, CT Plaza, 60A Trường Sơn, P. 2, Q. Tân Bình, TPHCM <br/>
+                    GP số: <strong>312952685</strong> do Sở kế hoạch & Đầu tư Tp Hồ Chí Minh cấp ngày 02/10/2014</p>
+				</div>
+                <div class="device-changing">
+                    <a href="#" title="">Xem phiên bản đầy đủ Desktop <i class="fa fa-caret-right" aria-hidden="true"></i></a>
+                </div>
+			</div>
+        </footer>
+		
+        <!-- begin MAIN MENU -->
+      <div class="modal " id="main-menu">
+        <div class="modal-dialog">
+          <!-- Modal content-->
+          <div class="modal-content">
+              <button type="button" id="btn-close" class="close" data-dismiss="modal"><i class="icon-close">&nbsp</i></button>
+               <ul class="main-menu">
+                    <li class="Selected"><a href="#"><i class="icon-login">&nbsp</i> Đăng nhập / Đăng ký</a></li>
+                    <li>
+                        <a href="#"><i class="icon icon-tasua">&nbsp</i> Tã & sữa <i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#" ><i class="icon icon-t">&nbsp</i> Phụ kiện điển tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-me-va-pe">&nbsp</i> Mẹ & bé<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thiet-bi-gd">&nbsp</i> Thiết bị gia đình<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-the-thao">&nbsp</i> Thể thao dã ngoại<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"> <i class="icon icon-dien-tu">&nbsp</i> Điện tử<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thoi-trang">&nbsp</i> Thời trang và phụ kiện<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-sach">&nbsp</i> Sách - Văn phòng phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-thuc-pham">&nbsp</i> Thực phẩm<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-suc-khoe">&nbsp</i> Sức khỏe<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="icon icon-my-pham">&nbsp</i> Mỹ phẩm - Làm đẹp<i class="fa fa-angle-right" aria-hidden="true"></i></a>
+                    </li>
+               </ul>
+          </div>
+          
+        </div>
+      </div>
+
+    </div><!-- /end WRAPPER -->
+
+    <script src="js/jquery-2.1.3.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/drag-on.js"></script>
+    <script src="js/owl.carousel.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
